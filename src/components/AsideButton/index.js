@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
 
-export default function AsideButton({ children }) {
+export default function AsideButton({ selected, danger, children }) {
   return (
-    <Container>
+    <Container selected={selected} danger={danger}>
       <Link to="/">
         {children}
       </Link>
@@ -15,5 +15,12 @@ export default function AsideButton({ children }) {
 }
 
 AsideButton.propTypes = {
+  selected: PropTypes.bool,
+  danger: PropTypes.bool,
   children: PropTypes.node.isRequired,
+};
+
+AsideButton.defaultProps = {
+  selected: false,
+  danger: false,
 };

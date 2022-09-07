@@ -22,6 +22,13 @@ export const AsideStyled = styled.aside`
   padding: 14px 0;
 `;
 
+export const Separator = styled.div`
+  background: #AAA;
+  width: ${({ width }) => width};
+  height: 1px;
+  margin: 10px auto;
+`;
+
 export const Menu = styled.div`
 
 `;
