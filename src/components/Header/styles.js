@@ -2,11 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   position: absolute;
-  top: 0;
-  left: 0;
 
   width: 100vw;
-  max-width: 1360px;
 
   padding: 30px 40px;
 
