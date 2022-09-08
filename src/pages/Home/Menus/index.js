@@ -1,16 +1,16 @@
 import React, { useMemo } from 'react';
 
-import AsideButton from '../../components/AsideButton';
+import AsideButton from '../../../components/AsideButton';
 
-import accountDataIcon from '../../assets/images/icons/account_data.svg';
-import perfilIcon from '../../assets/images/icons/perfil.svg';
-import configIcon from '../../assets/images/icons/config.svg';
-import adminConfigIcon from '../../assets/images/icons/admin_config.svg';
-import aboutIcon from '../../assets/images/icons/about.svg';
-import contactsIcon from '../../assets/images/icons/contacts.svg';
-import logoutIcon from '../../assets/images/icons/logout.svg';
+import accountDataIcon from '../../../assets/images/icons/account_data.svg';
+import perfilIcon from '../../../assets/images/icons/perfil.svg';
+import configIcon from '../../../assets/images/icons/config.svg';
+import adminConfigIcon from '../../../assets/images/icons/admin_config.svg';
+import aboutIcon from '../../../assets/images/icons/about.svg';
+import contactsIcon from '../../../assets/images/icons/contacts.svg';
+import logoutIcon from '../../../assets/images/icons/logout.svg';
 
-import { Separator } from './styles';
+import { Separator } from '../styles';
 
 export default function Menus() {
   const menus = useMemo(() => [
