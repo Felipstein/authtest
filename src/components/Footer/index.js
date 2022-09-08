@@ -4,8 +4,13 @@ import instagramIcon from '../../assets/images/icons/instagram.svg';
 import linkedinIcon from '../../assets/images/icons/linkedin.svg';
 import githubIcon from '../../assets/images/icons/github.svg';
 import discordIcon from '../../assets/images/icons/discord.svg';
+import copyIcon from '../../assets/images/icons/copy.svg';
 
 export default function Footer() {
+  function handleEmailCopy() {
+    navigator.clipboard.writeText('luisfelipe-oliveira@outlook.com.br');
+  }
+
   return (
     <Container>
       <div className="wrapper">
@@ -17,9 +22,14 @@ export default function Footer() {
               {' '}
               <strong
                 id="copy-email"
+                onClick={handleEmailCopy}
               >
                 luisfelipe-oliveira@outlook.com.br
               </strong>
+            </span>
+            <span className="tooltip">
+              <img src={copyIcon} alt="Copy" />
+              Clique para copiar
             </span>
           </div>
           <span>
