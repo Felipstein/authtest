@@ -12,7 +12,7 @@ export default function Footer() {
   function handleEmailCopy() {
     navigator.clipboard.writeText('luisfelipe-oliveira@outlook.com.br');
 
-    toast({ text: 'E-mail copiado!' });
+    toast('E-mail copiado!', 2500);
   }
 
   return (

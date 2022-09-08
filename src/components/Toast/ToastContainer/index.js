@@ -34,6 +34,7 @@ export default function ToastContainer() {
           key={toast.id}
           id={toast.id}
           text={toast.text}
+          duration={toast.duration}
           onRemoveToast={handleRemoveToast}
         />
       ))}
