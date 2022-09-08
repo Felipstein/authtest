@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-  max-width: 1100px;
+  max-width: 1120px;
   margin: auto;
+  padding: 0 20px;
 
   .wrapper {
     display: flex;
