@@ -104,11 +104,18 @@ export const Container = styled.footer`
     }
 
     .network nav {
-      a + a {
+      a + a, button {
         margin-left: 20px;
       }
 
-      a {
+      button {
+        cursor: pointer;
+        border: none;
+        outline: 0;
+        background: none;
+      }
+
+      a, button {
         padding-bottom: 1px;
         border-bottom: 2px solid transparent;
         transition: border-color 0.2s ease-in-out;
