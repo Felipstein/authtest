@@ -12,5 +12,6 @@ export const Container = styled.div`
 
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
 
+  z-index: 2;
   cursor: pointer;
 `;

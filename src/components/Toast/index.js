@@ -21,7 +21,6 @@ export default function Toast({
 
   return (
     <Container
-      tabIndex={0}
       role="button"
       onClick={handleRemoveToast}
     >
