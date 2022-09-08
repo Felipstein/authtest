@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Container } from './styles';
 
 export default function Toast({
-  id, duration, onRemoveToast, children,
+  id, text, duration, onRemoveToast,
 }) {
   useEffect(() => {
     const idTimeout = setTimeout(() => {
@@ -25,16 +25,16 @@ export default function Toast({
       role="button"
       onClick={handleRemoveToast}
     >
-      {children}
+      {text}
     </Container>
   );
 }
 
 Toast.propTypes = {
   id: PropTypes.number.isRequired,
+  text: PropTypes.any.isRequired,
   duration: PropTypes.number,
   onRemoveToast: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
 };
 
 Toast.defaultProps = {

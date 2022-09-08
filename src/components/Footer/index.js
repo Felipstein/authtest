@@ -1,5 +1,7 @@
 import { Container } from './styles';
 
+import toast from '../../utils/toast';
+
 import instagramIcon from '../../assets/images/icons/instagram.svg';
 import linkedinIcon from '../../assets/images/icons/linkedin.svg';
 import githubIcon from '../../assets/images/icons/github.svg';
@@ -9,6 +11,8 @@ import copyIcon from '../../assets/images/icons/copy.svg';
 export default function Footer() {
   function handleEmailCopy() {
     navigator.clipboard.writeText('luisfelipe-oliveira@outlook.com.br');
+
+    toast({ text: 'E-mail copiado!' });
   }
 
   return (
