@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  position: relative;
-  top: 132px;
-
   width: 75vw;
   max-width: 1360px;
-  margin: auto;
+  margin: 132px auto;
 
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
 
   overflow: hidden;
+
+  margin-bottom: 75px;
 `;
 
 export const AsideStyled = styled.aside`

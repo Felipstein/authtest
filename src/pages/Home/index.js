@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Menus from './Menus';
 
@@ -12,6 +13,7 @@ export default function Home() {
           <Menus />
         </AsideStyled>
       </Container>
+      <Footer />
     </>
   );
 }
