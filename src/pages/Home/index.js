@@ -16,7 +16,7 @@ export default function Home({ history }) {
   }
 
   function handleLogout() {
-    user.logout();
+    user.logout(); // this crash
   }
 
   return (
