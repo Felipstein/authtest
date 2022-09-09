@@ -6,6 +6,7 @@ import defaultTheme from '../../assets/theme/default';
 import Routes from '../../Routes';
 import ToastContainer from '../Toast/ToastContainer';
 import UserProvider from '../../contexts/UserContext';
+import Loader from '../Loader';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <GlobalStyle />
       <UserProvider>
         <ToastContainer />
+        <Loader />
         <BrowserRouter>
           <Routes />
         </BrowserRouter>
