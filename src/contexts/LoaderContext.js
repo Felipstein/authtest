@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 export const LoaderContext = createContext();
 
 export default function LoaderProvider({ children }) {
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const loadingProvider = useMemo(() => ({
-    loading, setLoading,
+    isLoading, setIsLoading,
   }));
 
   return (
