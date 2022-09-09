@@ -10,14 +10,22 @@ import logo from '../../assets/images/logo.svg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import { UserContext } from '../../contexts/UserContext';
+import delay from '../../utils/delay';
+
+import { LoaderContext } from '../../contexts/LoaderContext';
 
 export default function Login({ history }) {
   const [inputName, setInputName] = useState('');
   const user = useContext(UserContext);
+  const loader = useContext(LoaderContext);
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
+    loader.setIsLoading(true);
+    await delay(2000);
+
+    loader.setIsLoading(false);
     user.setName(inputName);
     history.push('/');
   }
