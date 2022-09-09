@@ -38,7 +38,7 @@ export const Overlay = styled.div`
       color: #fff;
       font-weight: 900;
       font-size: 72px;
-      margin-bottom: 150px;
+      margin-bottom: 6  0px;
     }
 
     span {

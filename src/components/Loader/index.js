@@ -1,13 +1,16 @@
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BounceLoader } from 'react-spinners';
 
 import logoWhite from '../../assets/images/logo_white.svg';
 import Background from '../Background';
+import { LoaderContext } from '../../contexts/LoaderContext';
 
 import { Overlay } from './styles';
 
 export default function Loader() {
+  const loader = useContext(LoaderContext);
+
   useEffect(() => {
     document.body.style.overflow = 'hidden';
 
@@ -15,6 +18,10 @@ export default function Loader() {
       document.body.style.overflow = 'unset';
     };
   }, []);
+
+  if (!loader.isLoading) {
+    return null;
+  }
 
   return ReactDOM.createPortal(
     <>
