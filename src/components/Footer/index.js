@@ -7,7 +7,6 @@ import instagramIcon from '../../assets/images/icons/instagram.svg';
 import linkedinIcon from '../../assets/images/icons/linkedin.svg';
 import githubIcon from '../../assets/images/icons/github.svg';
 import discordIcon from '../../assets/images/icons/discord.svg';
-import copyIcon from '../../assets/images/icons/copy.svg';
 import DiscordModal from '../DiscordModal';
 
 export default function Footer() {
@@ -36,10 +35,6 @@ export default function Footer() {
                 >
                   luisfelipe-oliveira@outlook.com.br
                 </strong>
-              </span>
-              <span className="tooltip">
-                <img src={copyIcon} alt="Copy" />
-                Clique para copiar
               </span>
             </div>
             <span>

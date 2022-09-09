@@ -1,6 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
+  .panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 46px;
+  }
+
   width: 75vw;
   max-width: 1360px;
   margin: 132px auto;
