@@ -15,10 +15,17 @@ export default function Home({ history }) {
     history.push('/login');
   }
 
+  function handleLogout() {
+    user.logout();
+  }
+
   return (
     <>
       <Header />
       <Container>
+        <button type="button" onClick={handleLogout}>
+          Sair
+        </button>
         <AsideStyled>
           <Menus />
         </AsideStyled>

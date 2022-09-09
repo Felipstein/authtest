@@ -1,7 +1,11 @@
 import { useState } from 'react';
 
-export default function useUser() {
-  const [name, setName] = useState(localStorage.getItem('username') || null);
+export default function useUser(initialName) {
+  const [name, setName] = useState(initialName || localStorage.getItem('username'));
+
+  if (initialName) {
+    localStorage.setItem('username', initialName);
+  }
 
   function setNameAndStore(newName) {
     if (!newName) {
