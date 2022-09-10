@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Overlay = styled.div`
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100vw;
   height: 100vh;
   background-color: #0F141E;

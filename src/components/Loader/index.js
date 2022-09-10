@@ -13,9 +13,9 @@ export default function Loader() {
   const loader = useContext(LoaderContext);
 
   const transition = useTransition(loader, {
-    from: { y: 1200, opacity: 0 },
-    enter: { y: 0, opacity: 1 },
-    leave: { y: 1200, opacity: 0 },
+    from: { transform: 'translateY(105vh)' },
+    enter: { transform: 'translateY(0vh)' },
+    leave: { transform: 'translateY(-105vh)' },
   });
 
   useEffect(() => {
@@ -30,14 +30,12 @@ export default function Loader() {
     return null;
   }
 
-  return ReactDOM.createPortal(
+  return transition((style) => (
     <>
       <Background white />
-      {transition((style, item) => item && (
-        <animated.div style={style}>
-          <Overlay />
-        </animated.div>
-      ))}
+      <animated.div style={style}>
+        <Overlay />
+      </animated.div>
       <Container>
         <header>
           <img src={logoWhite} alt="AuthTest Logo" />
@@ -54,7 +52,6 @@ export default function Loader() {
           <span>2022 Felipe Oliveira</span>
         </footer>
       </Container>
-    </>,
-    document.getElementById('loader-root'),
-  );
+    </>
+  ));
 }

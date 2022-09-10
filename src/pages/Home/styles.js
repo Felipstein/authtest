@@ -6,7 +6,7 @@ export const Container = styled.main`
     top: 0;
     left: 0;
 
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
 
