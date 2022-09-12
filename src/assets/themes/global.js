@@ -13,4 +13,9 @@ export default createGlobalStyle`
     font-family: ${({ theme }) => theme.font}
   }
 
+  input, select, button {
+    font-family: ${({ theme }) => theme.font};
+    font-size: 16px;
+  }
+
 `;
